@@ -13,6 +13,7 @@
       "version": "1.0.0-deprecated",
       "category": "Network",
       "source": "https://github.com/Azure/Enterprise-Scale/",
+      "supersededBy": "Deploy-Sql-vulnerabilityAssessments_20230706",
       "alzCloudEnvironments": [
         "AzureCloud",
         "AzureChinaCloud",
