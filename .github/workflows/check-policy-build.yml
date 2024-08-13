@@ -2,7 +2,7 @@
     name: Check Policy Build
     
     ##########################################
-    # Start the job on push for all branches #
+    # Start the job on PR for all branches #
     ##########################################
     
     # yamllint disable-line rule:truthy
