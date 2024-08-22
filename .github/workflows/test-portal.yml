@@ -119,7 +119,7 @@ jobs:
             } else {
               $paramfile = "./eslzArm/eslzArm.test.param.json"
             }
-            ./src/scripts/Invoke-ActionGenerateEslzArmConfig.ps1 -TemplateParameterPath $paramFile
+            ./src/scripts/Invoke-ActionGenerateEslzArmConfig.ps1 -TemplateParameterPath $paramFile -RootID '123456789'
             Get-Content -Path $env:TEMP_DEPLOYMENT_OBJECT_PATH | jq
           azPSVersion: "latest"
         env:
