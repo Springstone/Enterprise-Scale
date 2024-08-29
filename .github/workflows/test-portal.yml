@@ -104,6 +104,11 @@ jobs:
           inlineScript: ./src/scripts/Invoke-ActionRemoveOrphanedRBAC.ps1
           azPSVersion: "latest"
 
+      - name: Check Label
+        if: |
+          ${{ contains(github.event.pull_request.labels.*.name, 'Test: Standard ') }}
+        run: echo "Standard Label found"
+
       - name: Generate eslzArm configuration (Standard)
         if: |
           ${{ contains(github.event.pull_request.labels.*.name, 'Test: Standard ') }}
