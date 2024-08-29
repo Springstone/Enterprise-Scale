@@ -12,7 +12,7 @@
             "value": "Yes"
         },
         "retentionInDays": {
-            "value": "30"
+            "value": "31"
         },
         "enableSentinel": {
           "value": "Yes"
