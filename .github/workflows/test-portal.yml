@@ -46,11 +46,11 @@ jobs:
     environment: csu-rw
     if: |
       (
-        github.event.pull_request.head.repo.full_name == 'Azure/Enterprise-Scale'
+        github.event.pull_request.head.repo.full_name == 'Springstone/Enterprise-Scale'
       )
       ||
       (
-        github.event.pull_request.head.repo.full_name != 'Azure/Enterprise-Scale'
+        github.event.pull_request.head.repo.full_name != 'Springstone/Enterprise-Scale'
         &&
         contains(github.event.pull_request.labels.*.name, 'PR: Safe to test :test_tube:')
       )
