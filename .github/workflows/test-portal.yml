@@ -130,7 +130,7 @@ jobs:
       - name: Run eslzArm deployment (DEPLOY)
         uses: azure/powershell@v2
         with:
-          inlineScript: ./src/scripts/Invoke-ActionRunEslzArmDeployment.ps1 -RootID '1234567890' -TemplateUri 'https://raw.githubusercontent.com/$($env:GITHUB_REPOSITORY)/eslzArm/eslzArm.json'
+          inlineScript: ./src/scripts/Invoke-ActionRunEslzArmDeployment.ps1
           azPSVersion: "latest"
 
       - name: Install PowerShell modules
