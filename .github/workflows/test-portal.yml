@@ -106,8 +106,19 @@ jobs:
 
       - name: Check Label
         if: |
-          ${{ contains(github.event.pull_request.labels.*.name, 'Test: Standard ') }}
+          ${{ contains(github.event.pull_request.labels.*.name, 'Test: Standard') }}
         run: echo "Standard Label found"
+
+      - name: Check Label PowerShell
+        uses: azure/powershell@v1
+        with:
+          inlineScript: |
+            if (${{contains(github.event.pull_request.labels.*.name, 'Test: Standard')}}) 
+            { 
+              Write-Output "Standard Label found"
+            }
+            
+          azPSVersion: "latest"
 
       - name: Generate eslzArm configuration (Standard)
         if: |
