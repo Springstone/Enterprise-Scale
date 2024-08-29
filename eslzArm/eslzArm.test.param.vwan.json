@@ -6,7 +6,7 @@
             "value": "testPortal"
         },
         "telemetryOptOut": {
-            "value": "No"
+            "value": "Yes"
         },
         "enableLogAnalytics": {
             "value": "Yes"
