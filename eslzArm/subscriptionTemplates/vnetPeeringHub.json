@@ -59,7 +59,7 @@
           "resources": [
             {
               "type": "Microsoft.Network/virtualNetworks/virtualNetworkPeerings",
-              "apiVersion": "2020-07-01",
+              "apiVersion": "2024-05-01",
               "name": "[concat(variables('hubName'), '/peerTo', variables('hubNameSecondary'))]",
               "properties": {
                 "remoteVirtualNetwork": {
@@ -91,7 +91,7 @@
           "resources": [
             {
               "type": "Microsoft.Network/virtualNetworks/virtualNetworkPeerings",
-              "apiVersion": "2020-07-01",
+              "apiVersion": "2024-05-01",
               "name": "[concat(variables('hubNameSecondary'), '/peerTo', variables('hubName'))]",
               "properties": {
                 "remoteVirtualNetwork": {

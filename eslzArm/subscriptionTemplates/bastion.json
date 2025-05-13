@@ -298,7 +298,7 @@
                         {
                             "condition": "[equals(parameters('vnetNewOrExisting'), 'new')]",
                             "type": "Microsoft.Network/virtualNetworks",
-                            "apiVersion": "2022-07-01",
+                            "apiVersion": "2024-05-01",
                             "name": "[parameters('vnetName')]",
                             "location": "[parameters('location')]",
                             "properties": {
