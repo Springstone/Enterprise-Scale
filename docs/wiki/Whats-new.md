@@ -62,6 +62,10 @@ Here's what's changed in Enterprise Scale/Azure Landing Zones:
 
 - FIX: Updated the Audit-Tags-Mandatory-RG Policy Defintion to mode 'All' from 'Indexed' so that it evaluates resource group tags as intended.
 
+#### Tooling
+
+- Updating Microsoft.Networks/virtualNetwork API versions to `2024-05-01` in the portal accelerator to support the latest features.
+
 ### April 2025
 
 #### Tooling
